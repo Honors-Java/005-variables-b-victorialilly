@@ -1,3 +1,11 @@
+int xPosition = 75;
+int yPosition = 75;
+int diameter = 50;
+int width = 100;
+int rectColor = 128;
+int ellipseColor = 255;
+
+
 void setup() {
 	size(500, 500);
 }
@@ -15,9 +23,13 @@ void draw() {
 // For example, “variable1 = variable1 + 2;”. 
 
 // Step 4: Make it so when the program runs the ball slides off the screen exiting at the point (500, 500)
-
+ rectMode(CENTER);
   background(255);
   stroke(0);
+  fill(rectColor);
+  rect(xPosition,yPosition,width,width,)
+ fill(ellipseColor);
+  ellipse(xPosition,yPosition, diameter, diameter);
 
 
   
