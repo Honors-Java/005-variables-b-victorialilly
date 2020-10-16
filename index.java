@@ -1,9 +1,16 @@
 int xPosition = 75;
 int yPosition = 75;
-int diameter = 50;
+int diameter = 10;
 int width = 100;
 int rectColor = 128;
 int ellipseColor = 255;
+
+void mousePressed(){
+frameRate(30)
+rectMode(CORNER)
+background(255)
+rect(random(500),random(500), random(250),random(250))
+}
 
 
 void setup() {
@@ -23,13 +30,13 @@ void draw() {
 // For example, “variable1 = variable1 + 2;”. 
 
 // Step 4: Make it so when the program runs the ball slides off the screen exiting at the point (500, 500)
- rectMode(CENTER);
-  background(255);
+ 
+ 
   stroke(0);
-  fill(rectColor);
-  rect(xPosition,yPosition,width,width,)
- fill(ellipseColor);
-  ellipse(xPosition,yPosition, diameter, diameter);
+
+ fill(random(255),random(255),random(255));
+  ellipse(mouseX+random(50),mouseY + random(50), diameter, diameter);
+  
 
 
   
